@@ -33,9 +33,47 @@ To get started with **Autonomous3DPathfinder**, you need to clone the repository
    ```bash
    git clone https://github.com/yourusername/Autonomous3DPathfinder.git
    cd Autonomous3DPathfinder
-
----
+   ```
 
 2.Install the necessary dependencies
    ```bash
    pip install -r requirements.txt
+   ```
+
+---
+
+## dependencies
+ 
+Autonomous3DPathfinder requires the following Python packages:
+
+    numpy
+    matplotlib
+    random
+
+Install all dependencies using the provided requirements.txt
+
+---
+
+## usage
+
+Once the dependencies are installed, you can run the program and train the agent to navigate through the 3D maze
+
+1.Run the agent and start training:
+   ```bash
+     python main.py
+   ```
+
+2.After training, the agent will find the optimal path, and the results will be displayed in a 3D plot, showing the path taken by the agent and the locations of dynamic obstacles.
+
+---
+
+## training-the-agent
+
+Training the agent involves running the Q-learning algorithm for a specified number of episodes. During training, the agent will:
+
+    Start from the initial state.
+    Take actions based on the epsilon-greedy policy.
+    Receive rewards based on its interactions with the environment.
+    Update its Q-table after each action.
+
+The agent will continue training for a set number of episodes or until it reaches the goal.
