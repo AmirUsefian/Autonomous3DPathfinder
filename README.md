@@ -33,3 +33,9 @@ To get started with **Autonomous3DPathfinder**, you need to clone the repository
    ```bash
    git clone https://github.com/yourusername/Autonomous3DPathfinder.git
    cd Autonomous3DPathfinder
+
+---
+
+2.Install the necessary dependencies
+   ```bash
+   pip install -r requirements.txt
