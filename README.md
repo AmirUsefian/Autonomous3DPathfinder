@@ -1,10 +1,10 @@
 # Autonomous3DPathfinder
 
-**Autonomous3DPathfinder** is a reinforcement learning-based agent designed to navigate a 3D maze environment and find the optimal path from a start position to a goal while avoiding dynamic obstacles. The agent uses Q-learning to improve its decision-making over multiple episodes. It incorporates real-world challenges, such as moving obstacles, to mimic realistic pathfinding problems.
+**Autonomous3DPathfinder** is a reinforcement learning-based agent designed to navigate a 3D Grid environment and find the optimal path from a start position to a goal while avoiding dynamic obstacles. The agent uses Q-learning to improve its decision-making over multiple episodes. It incorporates real-world challenges, such as moving obstacles, to mimic realistic pathfinding problems.
 
 ### Features
 
-- **3D Maze Navigation:** The agent can navigate a 3D grid (layers, rows, columns) to find the shortest path to the goal.
+- **3D Grid Navigation:** The agent can navigate a 3D grid (layers, rows, columns) to find the shortest path to the goal.
 - **Dynamic Obstacles:** Obstacles in the environment move randomly at set intervals, adding complexity to the pathfinding challenge.
 - **Q-Learning:** The agent uses Q-learning to update its action-value function and improve its performance over time.
 - **Epsilon-Greedy Policy:** The agent explores the environment randomly with a probability (epsilon) to ensure effective exploration and exploitation.
@@ -83,7 +83,7 @@ The agent will continue training for a set number of episodes or until it reache
 
 ## visualizing-the-path
 
-After the agent completes training, the optimal path is visualized using matplotlib in a 3D plot, which helps you understand how the agent navigated through the maze while avoiding obstacles.
+After the agent completes training, the optimal path is visualized using matplotlib in a 3D plot, which helps you understand how the agent navigated through the grids while avoiding obstacles.
 
 ---
 
