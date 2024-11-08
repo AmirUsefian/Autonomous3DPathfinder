@@ -10,13 +10,6 @@
 - **Epsilon-Greedy Policy:** The agent explores the environment randomly with a probability (epsilon) to ensure effective exploration and exploitation.
 - **Optimal Path Finding:** After training, the agent can find the best path from start to goal based on its learned Q-table.
 - **Multiple Layers and Dimensions:** The environment consists of multiple layers, rows, and columns, allowing for complex navigation in a 3D space.
-- **Real-Time Obstacle Movement:** Dynamic obstacles are updated periodically, requiring the agent to continuously adapt to a changing environment.
-- **Reward Mechanism:** The agent receives rewards for reaching the goal and penalties for hitting obstacles, promoting efficient pathfinding.
-- **Exploration vs Exploitation Balance:** Through epsilon-greedy strategy, the agent balances exploring new states and exploiting known ones to optimize learning.
-- **Path Visualization:** The optimal path and obstacles can be visualized in a 3D plot to aid in understanding agent behavior and performance.
-- **Goal-Oriented Learning:** The agent’s primary objective is to reach the goal efficiently while avoiding obstacles, mimicking real-world autonomous navigation tasks.
-- **Training Efficiency:** Uses a reward discount factor (gamma) and learning rate (alpha) to optimize the learning process, ensuring faster convergence and stable training.
-- **Agent Performance Monitoring:** Tracks the number of steps and episodes during training, allowing performance optimization by adjusting parameters like epsilon, gamma, and alpha.
 
 ---
 
