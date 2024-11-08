@@ -22,7 +22,7 @@
 5. [Visualizing the Path](#visualizing-the-path)
 6. [Limitations](#Limitations)
 6. [Enhancement Ideas](#Enhancement-Ideas)
-![3D Grid Navigation](images/Screenshot from 2024-11-08 15-13-57.png)
+![3D Grid Navigation](images/image.png)
 
 ---
 
