@@ -10,6 +10,8 @@
 - **Epsilon-Greedy Policy:** The agent explores the environment randomly with a probability (epsilon) to ensure effective exploration and exploitation.
 - **Optimal Path Finding:** After training, the agent can find the best path from start to goal based on its learned Q-table.
 - **Multiple Layers and Dimensions:** The environment consists of multiple layers, rows, and columns, allowing for complex navigation in a 3D space.
+![3D Grid Navigation](images/image.png)
+
 
 ---
 
@@ -22,7 +24,6 @@
 5. [Visualizing the Path](#visualizing-the-path)
 6. [Limitations](#Limitations)
 6. [Enhancement Ideas](#Enhancement-Ideas)
-![3D Grid Navigation](images/image.png)
 
 ---
 
