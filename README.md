@@ -19,9 +19,7 @@
 3. [Usage](#usage)
 4. [Training the Agent](#training-the-agent)
 5. [Visualizing the Path](#visualizing-the-path)
-6. [Directory Structure](#directory-structure)
-7. [Contributing](#contributing)
-8. [License](#license)
+6. [Contributing](#contributing)
 
 ---
 
@@ -71,9 +69,28 @@ Once the dependencies are installed, you can run the program and train the agent
 
 Training the agent involves running the Q-learning algorithm for a specified number of episodes. During training, the agent will:
 
-    Start from the initial state.
-    Take actions based on the epsilon-greedy policy.
-    Receive rewards based on its interactions with the environment.
-    Update its Q-table after each action.
+   1.Start from the initial state.
+   2.Take actions based on the epsilon-greedy policy.
+   3.Receive rewards based on its interactions with the environment.
+   4.Update its Q-table after each action.
 
 The agent will continue training for a set number of episodes or until it reaches the goal.
+
+---
+
+## visualizing-the-path
+
+After the agent completes training, the optimal path is visualized using matplotlib in a 3D plot, which helps you understand how the agent navigated through the maze while avoiding obstacles.
+
+---
+
+## contributing
+
+I welcome contributions to Autonomous3DPathfinder! If you would like to contribute:
+
+   1.Fork the repository.
+   2.Create a new branch.
+   3.Make your changes.
+   4.Submit a pull request.
+
+Please ensure that your code follows the PEP8 style guide and includes relevant test cases.
