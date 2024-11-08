@@ -1,27 +1,92 @@
-# Autonomous Pathfinding in 3D Environments using Q-Learning
+Here’s an updated version of the README based on the "Autonomous3DPathfinder" project name:
+Autonomous3DPathfinder
 
-This project demonstrates the use of reinforcement learning, specifically Q-learning, to train an autonomous agent to navigate a 3D maze environment. The agent learns to avoid dynamic obstacles and efficiently find the shortest path to a predefined goal. The agent's learning process is visualized in 3D, showcasing its pathfinding abilities and its interactions with the environment.
+Autonomous3DPathfinder is a reinforcement learning-based agent designed to navigate a 3D maze environment and find the optimal path from a start position to a goal while avoiding dynamic obstacles. The agent uses Q-learning to improve its decision-making over multiple episodes. It incorporates real-world challenges, such as moving obstacles, to mimic realistic pathfinding problems.
+Features
 
-## Project Overview
+    3D Maze Navigation: The agent can navigate a 3D grid (layers, rows, columns) to find the shortest path to the goal.
+    Dynamic Obstacles: Obstacles in the environment move randomly at set intervals, adding complexity to the pathfinding challenge.
+    Q-Learning: The agent uses Q-learning to update its action-value function and improve its performance over time.
+    Epsilon-Greedy Policy: The agent explores the environment randomly with a probability (epsilon) to ensure effective exploration and exploitation.
+    Optimal Path Finding: After training, the agent can find the best path from start to goal based on its learned Q-table.
 
-The project is designed to simulate a real-world application of reinforcement learning in a dynamic 3D environment. The key components of the system include:
-- **3D Grid Environment**: A virtual maze with dynamic obstacles and a goal state.
-- **Q-Learning Agent**: An autonomous agent that uses Q-learning to explore the environment and learn the optimal path.
-- **Dynamic Obstacles**: Obstacles move periodically within the environment, challenging the agent to adapt its strategy.
-- **Visualization**: After training, the optimal path taken by the agent is visualized in 3D, alongside obstacles and the goal.
+Table of Contents
 
-### Key Features:
-- **3D Grid Navigation**: The agent operates in a 3D grid with multiple layers, simulating a more complex environment than traditional 2D grids.
-- **Dynamic Obstacles**: Obstacles move every few steps, creating an environment where the agent needs to react in real-time.
-- **Reinforcement Learning**: The agent utilizes Q-learning, a model-free reinforcement learning algorithm, to update its knowledge base and improve its decision-making process.
-- **Exploration vs. Exploitation**: The agent balances between exploring new actions and exploiting its learned knowledge using an epsilon-greedy strategy.
-- **Pathfinding Algorithm**: After training, the agent can find the optimal path to the goal, avoiding obstacles and maximizing rewards.
+    Installation
+    Dependencies
+    Usage
+    Training the Agent
+    Visualizing the Path
+    Directory Structure
+    Contributing
+    License
 
-## Installation
+Installation
 
-To get started with this project, clone the repository and install the dependencies:
+To get started with Autonomous3DPathfinder, you need to clone the repository and install the required dependencies. You can do so by following the steps below.
 
-```bash
-git clone https://github.com/yourusername/3d-maze-pathfinding.git
-cd 3d-maze-pathfinding
-pip install -r requirements.txt
+    Clone the repository:
+
+git clone https://github.com/yourusername/Autonomous3DPathfinder.git
+cd Autonomous3DPathfinder
+
+Install the necessary dependencies:
+
+    pip install -r requirements.txt
+
+Dependencies
+
+Autonomous3DPathfinder requires the following Python packages:
+
+    numpy
+    matplotlib
+    random
+
+Install all dependencies using the provided requirements.txt:
+
+numpy==1.24.0
+matplotlib==3.7.1
+
+Usage
+
+Once the dependencies are installed, you can run the program and train the agent to navigate through the 3D maze.
+
+    Run the agent and start training:
+
+    python main.py
+
+    After training, the agent will find the optimal path, and the results will be displayed in a 3D plot, showing the path taken by the agent and the locations of dynamic obstacles.
+
+Training the Agent
+
+Training the agent involves running the Q-learning algorithm for a specified number of episodes. During training, the agent will:
+
+    Start from the initial state.
+    Take actions based on the epsilon-greedy policy.
+    Receive rewards based on its interactions with the environment.
+    Update its Q-table after each action.
+
+The agent will continue training for a set number of episodes or until it reaches the goal.
+Visualizing the Path
+
+After the agent completes training, the optimal path is visualized using matplotlib in a 3D plot, which helps you understand how the agent navigated through the maze while avoiding obstacles.
+Directory Structure
+
+Autonomous3DPathfinder/
+│
+├── agent.py              # Contains the Agent class and Q-learning logic
+├── environment.py        # Contains the Environment class, obstacle management, and state transitions
+├── main.py               # Main script to run the training and visualize the path
+├── README.md             # This file
+├── requirements.txt      # List of dependencies
+
+Contributing
+
+We welcome contributions to Autonomous3DPathfinder! If you would like to contribute:
+
+    Fork the repository.
+    Create a new branch.
+    Make your changes.
+    Submit a pull request.
+
+Please ensure that your code follows the PEP8 style guide and includes relevant test cases.
